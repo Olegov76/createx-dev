@@ -1,0 +1,52 @@
+.header {
+    padding: 23px 0;
+    &__container {
+        @include flex-all-sb;
+    }
+    &__nav-list {
+        @include flex-v-center;
+        margin-left: -113px;
+    }
+    &__nav-itams:not(:last-child) {
+        margin-right: 40px;
+    }
+    &__nav-link {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--color-grey800);
+    }
+    &__contacts-box {
+        @include flex-v-center;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__contacts {
+        &:not(:last-child) {
+            margin-right: 33px;
+        }
+        background-position: left center;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        padding-left: 55px;
+        &-captions {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--color-grey800);
+            line-height: 150%;
+        }
+        &-value {
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--color-grey900);
+        }
+        &-phone {
+            background-image: url(../../img/phone.svg);
+        }
+        &-chat {
+            background-image: url(../../img/chat.svg);
+        }
+    }
+}
