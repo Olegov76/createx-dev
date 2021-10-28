@@ -1,19 +1,20 @@
 .header {
-    padding: 23px 0;
+    padding-top: 23px;
+    padding-bottom: 21px;
     &__container {
         @include flex-all-sb;
     }
     &__nav-list {
         @include flex-v-center;
-        margin-left: -113px;
+        margin-left: -110px;
     }
     &__nav-itams:not(:last-child) {
-        margin-right: 40px;
+        margin-right: 41px;
     }
     &__nav-link {
         font-weight: 700;
         font-size: 16px;
-        color: var(--color-grey800);
+        color: var(--color-gray800);
     }
     &__contacts-box {
         @include flex-v-center;
@@ -30,23 +31,23 @@
         background-position: left center;
         background-size: 40px 40px;
         background-repeat: no-repeat;
-        padding-left: 55px;
+        padding-left: 54px;
         &-captions {
             font-weight: 700;
             font-size: 14px;
-            color: var(--color-grey800);
+            color: var(--color-gray800);
             line-height: 150%;
         }
         &-value {
             font-size: 18px;
             line-height: 150%;
-            color: var(--color-grey900);
+            color: var(--color-gray900);
         }
         &-phone {
-            background-image: url(../../img/phone.svg);
+            background-image: url(../img/phone.svg);
         }
         &-chat {
-            background-image: url(../../img/chat.svg);
+            background-image: url(../img/chat.svg);
         }
     }
 }
