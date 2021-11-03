@@ -88,6 +88,15 @@ a {
     padding: 17px 38px;
 }
 
+.btn-stroke {
+    margin-right: 24px;
+}
+
+.btn-fill {
+    background-color: var(--color-primary);
+    border: transparent;
+}
+
 .title {
     margin: 0;
     color: var(--color-gray900);
@@ -97,7 +106,7 @@ a {
     margin-bottom: 23px;
 }
 
-.deskr {
+.descr {
     margin: 0;
     color: var(--color-gray700);
     font-size: 18px;
@@ -107,4 +116,37 @@ a {
 
 .text--center {
     text-align: center;
+}
+
+.card-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-grey900);
+}
+
+.card-descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.small__section-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--color-gray900);
+}
+
+.section-input {
+    width: 260px;
+    height: 44px;
+    &-big {
+        width: 414px;
+    }
+    .section__and-box {
+        @include flex-all-center;
+    }
 }

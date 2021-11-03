@@ -1,0 +1,43 @@
+.values {
+    margin-bottom: 271px;
+    &__grid {
+        --values-gap: 94px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: calc(var(--values-gap)*2);
+    }
+    &__list-itams {
+        position: relative;
+        text-align: center;
+        padding-top: 77px;
+        background-position: top center;
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        &:not(:last-child) {
+            &::after {
+                position: absolute;
+                content: "";
+                right: calc(-1 * var(--values-gap));
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background-image: url(../img/divider.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    &__like {
+        background-image: url(../img/like.svg);
+    }
+    &__hand {
+        background-image: url(../img/hand.svg);
+    }
+    &__slippers {
+        background-image: url(../img/slippers.svg);
+    }
+    &__card-ofset {
+        margin-bottom: 7px;
+    }
+}
