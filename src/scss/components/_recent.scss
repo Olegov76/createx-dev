@@ -1,0 +1,74 @@
+    .recent {
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 255px);
+            gap: 30px;
+        }
+        &__list {
+            grid-column: 5 span;
+            background: var(--color-white);
+            box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+            border-radius: 4px;
+            &:first-child {
+                grid-column: 7 span;
+                grid-row: 2 span;
+            }
+        }
+        &__small-ofset {
+            padding-top: 16px;
+            padding-bottom: 20px;
+        }
+        &__span {
+            position: relative;
+            margin: 0;
+            margin-bottom: 18px;
+            color: var(--color-gray700);
+            font-size: 14px;
+            line-height: 150%;
+            &:not(:last-child) {
+                margin-right: 20px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -15px;
+                    top: 3px;
+                    width: 1px;
+                    height: 11px;
+                    color: var(--color-gray700);
+                    background-color: var(--color-gray700);
+                }
+            }
+        }
+        &__span-icon {
+            background-image: url(../img/chat-icon.svg);
+            background-position: left top;
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            padding-left: 25px;
+        }
+        &__span-ofset {
+            padding-left: 24px;
+        }
+        &__descr-ofset {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 17px;
+        }
+        &__title {
+            margin: 0;
+            margin-bottom: 12px;
+            padding-left: 24px;
+            padding-top: 24px;
+            &-small {
+                padding-top: 14px;
+                margin-bottom: 11px;
+            }
+        }
+        &-ofset__title {
+            margin-bottom: 57px;
+        }
+        &-ofset {
+            margin-top: 82px;
+        }
+    }
