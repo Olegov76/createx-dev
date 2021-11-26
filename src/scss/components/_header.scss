@@ -50,4 +50,10 @@
             background-image: url(../img/chat.svg);
         }
     }
+    &-services {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
 }

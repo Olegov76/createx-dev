@@ -1,0 +1,78 @@
+.form-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(../img/form-bg.jpg);
+    background-color: var(--color-gray800);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-title {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 48px 40px;
+        background-color: var(--color-white);
+        border: 1px solid #e5e8ed;
+        box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+        border-radius: 4px;
+    }
+    &__lable {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--color-gray800);
+    }
+    &__input {
+        width: 415px;
+        height: 44px;
+        padding-left: 16px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        background: #f4f5f7;
+        border: 1px solid #d7dadd;
+        border-radius: 4px;
+    }
+    &__textarea {
+        width: 415px;
+        height: 66px;
+        padding-left: 16px;
+        padding-top: 11px;
+        resize: none;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        background: #f4f5f7;
+        border: 1px solid #d7dadd;
+        border-radius: 4px;
+    }
+    &-btn {
+        margin: 0 auto;
+        font-size: 14px;
+        padding: 15px 32px;
+    }
+    .custom-checkbox {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 21px;
+        &__input {
+            margin-top: 4px;
+            margin-right: 12px;
+        }
+        &__text {
+            display: block;
+            max-width: 350px;
+            font-size: 14px;
+            line-height: 150%;
+            color: var(--color-gray800);
+        }
+    }
+}

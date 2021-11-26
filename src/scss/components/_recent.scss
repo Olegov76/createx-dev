@@ -1,5 +1,5 @@
     .recent {
-        &__grid {
+        &-grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(2, 255px);
@@ -70,5 +70,6 @@
         }
         &-ofset {
             margin-top: 82px;
+            margin-bottom: 122px;
         }
     }

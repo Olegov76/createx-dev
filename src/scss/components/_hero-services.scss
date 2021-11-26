@@ -1,0 +1,50 @@
+.hero-services {
+    padding-top: 154px;
+    padding-bottom: 152px;
+    background-image: url(../img/services2-bg.png);
+    background-position: top right;
+    background-size: 975px 600px;
+    background-repeat: no-repeat;
+    &-list {
+        display: flex;
+    }
+    &-itams:not(:last-child) {
+        margin-right: 24px;
+        margin-bottom: 40px;
+        position: relative;
+         ::after {
+            position: absolute;
+            content: "/";
+            top: 0;
+            right: -15px;
+            color: #9A9CA5;
+        }
+    }
+    &-link {
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--color-gray800);
+        &:not([href]) {
+            color: #9A9CA5;
+        }
+    }
+    &-title {
+        margin: 0;
+        text-transform: uppercase;
+        max-width: 600px;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 130%;
+        letter-spacing: 1px;
+        color: var(--color-gray900);
+        margin-bottom: 25px;
+    }
+    &-descr {
+        margin: 0;
+        margin-bottom: 24px;
+        max-width: 600px;
+        font-size: 20px;
+        line-height: 150%;
+        color: var(--color-gray700);
+    }
+}

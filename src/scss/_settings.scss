@@ -12,7 +12,6 @@
         margin: 0;
         font-family: "Ubunto", sans-serif;
         font-weight: 400;
-        padding-bottom: 700px;
     }
 
     img {
@@ -52,6 +51,17 @@
 
     .js-focus-visible :focus:not(.focus-visible) {
         outline: none;
+    }
+
+    .visually-hidden {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
     }
 
     .section-ofset {
@@ -197,4 +207,13 @@
         font-size: 14px;
         line-height: 150%;
         color: var(--color-gray700);
+    }
+
+    .castom-checkbox {
+        display: flex;
+    }
+
+    .soc-icon {
+        width: 24px;
+        height: 24px;
     }
