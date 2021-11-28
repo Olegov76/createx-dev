@@ -1,0 +1,39 @@
+.contant-services {
+    padding-top: 120px;
+    padding-bottom: 180px;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 120px;
+        }
+        &-right {
+            flex-direction: flex-start;
+            width: 565px;
+        }
+    }
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: var(--color-gray900);
+        margin-bottom: 24px;
+    }
+    &__descr {
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--color-gray700);
+        margin-bottom: 52px;
+    }
+    &__btn {
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+        border-radius: 4px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 13px 32px;
+        letter-spacing: 0.5px;
+    }
+}
