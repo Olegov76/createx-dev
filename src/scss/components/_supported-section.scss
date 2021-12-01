@@ -1,21 +1,8 @@
 .supported-section {
-    height: 934px;
-    margin-bottom: 222px;
     &__bg {
         background-color: #f4f5f7;
-        padding-top: 120px;
-        padding-bottom: 121px;
+        padding-top: 83px;
         z-index: 3;
-    }
-    &-ofset {
-        margin-bottom: 60px;
-    }
-    &-client-logo {
-        display: block;
-    }
-    &__logo-box {
-        @include flex-all-sb;
-        margin-bottom: 184px;
     }
     &-contant {
         display: flex;
@@ -49,8 +36,8 @@
         margin-bottom: 30px;
     }
     &__right {
-        position: relative;
-        top: -492px;
+        margin-bottom: -60px;
+        z-index: 10;
     }
     &-foto {
         display: block;

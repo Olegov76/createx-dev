@@ -1,8 +1,11 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
-    --color-gray700: #787A80;
+    --color-gray600: #9A9ca5;
+    --color-gray700: #787a80;
     --color-gray800: #424551;
     --color-gray900: #1e212c;
     --color-primary: #ff5a30;
+    // Тень
+    --color-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 }

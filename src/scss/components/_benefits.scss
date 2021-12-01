@@ -1,0 +1,69 @@
+        .benefits {
+            &-bg {
+                background-color: var(--color-gray900);
+                padding-top: 80px;
+                padding-bottom: 126px;
+            }
+            &-title {
+                text-align: center;
+                color: var(--color-white);
+                margin-bottom: 24px;
+            }
+            &-descr {
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: var(--color-white);
+                opacity: 0.6;
+                margin-bottom: 60px;
+            }
+            &__card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &-img {
+                    margin-bottom: 28px;
+                }
+                &-itams {
+                    position: relative;
+                    max-width: 285px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &:not(:last-child) {
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            right: -94px;
+                            background-image: url(../img/divider.png);
+                            height: 188px;
+                            width: 2px;
+                        }
+                    }
+                }
+                &-title {
+                    margin: 0;
+                    font-family: "Ubunto";
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: var(--color-white);
+                    margin-bottom: 8px;
+                }
+                &-descr {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: var(--color-white);
+                    opacity: 0.6;
+                    text-align: center;
+                }
+            }
+            &-btn {
+                display: block;
+                margin: 0 auto;
+                margin-top: -26px;
+                padding: 18px 113px;
+            }
+        }

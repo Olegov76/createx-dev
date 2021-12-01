@@ -1,0 +1,43 @@
+.offer {
+    padding-top: 58px;
+    padding-bottom: 180px;
+    &__contant {
+        display: flex;
+        justify-content: space-between;
+        &-right {
+            max-width: 420px;
+        }
+        &-btn {
+            margin-right: 20px;
+            padding-top: 8px;
+            &-icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &-right-box {
+            display: flex;
+            align-items: start;
+            padding-top: 24px;
+        }
+        &-descr {
+            margin: 0;
+            padding-left: 40px;
+            font-size: 16px;
+            line-height: 160%;
+            color: var(--color-gray700);
+        }
+    }
+    &-title {
+        margin-bottom: 40px;
+        font-family: Lato;
+        &-small {
+            margin: 0;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            color: var(--color-gray900);
+            margin-bottom: 14px;
+        }
+    }
+}

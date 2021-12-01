@@ -1,0 +1,65 @@
+.wedo {
+    padding-bottom: 102px;
+    &-contant {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 30px;
+    }
+    &-title {
+        font-family: "Ubunto";
+        margin-bottom: 60px;
+    }
+    &__card {
+        grid-column: 3 span;
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 75px;
+        &:not(:last-child) {
+            background-image: url(../img/line.svg);
+            background-position: top right;
+            background-size: 200px 59px;
+            background-repeat: no-repeat;
+        }
+        &-span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            display: block;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 130%;
+            color: #d7dadd;
+            margin-bottom: 18px;
+            &-activ {
+                width: 84px;
+                top: 20px;
+                left: 14px;
+                height: 84px;
+                border-radius: 100%;
+                padding-left: 15px;
+                padding-top: 11px;
+                margin-left: -32px;
+                margin-top: -29px;
+                color: var(--color-primary);
+                background-color: rgb(255, 90, 48, 0.12);
+                outline: solid 16px rgb(255, 90, 48, 0.06) !important;
+            }
+        }
+        &-title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: var(--color-gray900);
+            margin-bottom: 8px;
+        }
+        &-descr {
+            margin: 0;
+            font-size: 16px;
+            line-height: 160%;
+            color: var(--color-gray700);
+        }
+    }
+}
